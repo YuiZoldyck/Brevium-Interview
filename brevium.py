@@ -152,7 +152,8 @@ def valid_appointment(appointments, date, person):
   for dt in appt:
     if is_week_apart(dt, date):
       isValid = True
-    return False
+    else:
+      return False
 
   return True
 
